@@ -29,8 +29,6 @@ source images inspected through the web tool. They are not pixel-identical copie
   Reference: https://raw.githubusercontent.com/jax-ml/jax/main/images/jax_logo_250px.png
 - NumPyro: reconstructed red/orange/yellow Pyro monogram.
   Reference: https://raw.githubusercontent.com/pyro-ppl/numpyro/master/docs/source/_static/img/pyro_logo.png
-- MATLAB: locally drawn membrane-style symbol; not the original MathWorks PNG.
-  Reference: https://raw.githubusercontent.com/mathworks/MATLAB-extension-for-vscode/main/public/L-Membrane_RGB_128x128.png
 
 These entries are documented explicitly so that they are not mistaken for
 unmodified official assets. Their editable vectors are in design/legacy-logos/.
@@ -59,5 +57,22 @@ Original SVGs, attribution comments, and the license notice are retained in
 - https://github.com/FortAwesome/Font-Awesome
 - https://fontawesome.com/license/free
 
-The JAX, NumPyro, MATLAB, and representative toolchain marks described above have
+The JAX, NumPyro, and representative toolchain marks described above have
 not been replaced or reclassified in this layout revision.
+
+## MATLAB-only correction
+
+The previous hand-drawn MATLAB approximation has been replaced by theSVG's
+source-provided MATLAB vector icon. The geometry, gradients, and source colors
+are retained; the mark is uniformly scaled into the existing 56 x 32 pixel logo
+box, above the existing MATLAB caption. This is theSVG's vector rendition, not
+MathWorks' official raster PNG. No other tool marks or profile layout changed.
+
+Source: https://thesvg.org/icon/matlab
+Upstream SVG: https://github.com/glincker/thesvg/blob/main/public/icons/matlab/default.svg
+License: MIT, as identified by the upstream icon page. The license notice is
+in LICENSE-THESVG.txt. MATLAB remains a trademark of The MathWorks, Inc.
+
+The source is bundled at design/legacy-logos/logo-matlab.svg. The two
+pre-rendered local image files are assets/profile-v4/tool-matlab-light.png and
+assets/profile-v4/tool-matlab-dark.png. No external image request is needed.
