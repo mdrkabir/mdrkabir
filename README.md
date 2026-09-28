@@ -13,8 +13,8 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
 
 <p>
   <a href="https://mdrkabir.github.io/homepage/"><img src="assets/links/website.svg" alt="Personal website" width="164" height="36"></a> &nbsp;
-  <a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en"><img src="assets/links/scholar.svg" alt="Google Scholar" width="158" height="36"></a> &nbsp;
-  <a href="https://www.linkedin.com/in/mdrysulkabir/"><img src="assets/links/linkedin.svg" alt="LinkedIn" width="118" height="36"></a>
+  <a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en"><img src="assets/links/scholar.svg" alt="Google Scholar" width="164" height="36"></a> &nbsp;
+  <a href="https://www.linkedin.com/in/mdrysulkabir/"><img src="assets/links/linkedin.svg" alt="LinkedIn" width="164" height="36"></a>
 </p>
 
 ### Tech Stack 🛠️
