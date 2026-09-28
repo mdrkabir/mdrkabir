@@ -1,0 +1,61 @@
+{
+  "size": [
+    1200,
+    520
+  ],
+  "prompt": "rysul@research:~$ ",
+  "scenes": [
+    [
+      "whoami",
+      [
+        [
+          "Md Rysul Kabir",
+          "#f1f3ff"
+        ],
+        [
+          "Computer Science Ph.D. student",
+          "#94a1be"
+        ],
+        [
+          "Indiana University Bloomington",
+          "#94a1be"
+        ]
+      ]
+    ],
+    [
+      "cat research.txt",
+      [
+        [
+          "LLM post-training & evaluation",
+          "#b89cff"
+        ],
+        [
+          "Reinforcement learning & memory",
+          "#69d9e6"
+        ],
+        [
+          "Bayesian modeling & inference",
+          "#eabc77"
+        ]
+      ]
+    ],
+    [
+      "ls selected-work/",
+      [
+        [
+          "01  behind-harmful-compliance",
+          "#b89cff"
+        ],
+        [
+          "02  time-scale-invariant-memory",
+          "#69d9e6"
+        ],
+        [
+          "03  bayesian-path-integration",
+          "#eabc77"
+        ]
+      ]
+    ]
+  ],
+  "note": "Decorative profile animation, not a live terminal. Uses only public profile information."
+}

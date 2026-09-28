@@ -1,0 +1,30 @@
+{
+  "jax": {
+    "light": "https://raw.githubusercontent.com/jax-ml/jax/main/images/jax_logo_250px.png",
+    "width": 82,
+    "height": 48,
+    "pad": 15,
+    "dark": "https://raw.githubusercontent.com/jax-ml/jax/main/images/jax_logo_250px.png"
+  },
+  "numpyro": {
+    "light": "https://raw.githubusercontent.com/pyro-ppl/numpyro/master/docs/source/_static/img/pyro_logo.png",
+    "width": 57,
+    "height": 48,
+    "pad": 15,
+    "dark": "https://raw.githubusercontent.com/pyro-ppl/numpyro/master/docs/source/_static/img/pyro_logo.png"
+  },
+  "matlab": {
+    "light": "https://raw.githubusercontent.com/mathworks/MATLAB-extension-for-vscode/main/public/L-Membrane_RGB_128x128.png",
+    "width": 54,
+    "height": 54,
+    "pad": 12,
+    "dark": "https://raw.githubusercontent.com/mathworks/MATLAB-extension-for-vscode/main/public/L-Membrane_RGB_128x128.png"
+  },
+  "vllm": {
+    "light": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/assets/logos/vllm-logo-text-light.png",
+    "dark": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/assets/logos/vllm-logo-text-dark.png",
+    "width": 128,
+    "height": 33,
+    "pad": 19
+  }
+}

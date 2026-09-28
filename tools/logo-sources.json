@@ -1,0 +1,22 @@
+[
+  {
+    "path": "assets/logo-jax.png",
+    "url": "https://raw.githubusercontent.com/jax-ml/jax/main/images/jax_logo_250px.png"
+  },
+  {
+    "path": "assets/logo-numpyro.png",
+    "url": "https://raw.githubusercontent.com/pyro-ppl/numpyro/master/docs/source/_static/img/pyro_logo.png"
+  },
+  {
+    "path": "assets/logo-matlab.png",
+    "url": "https://raw.githubusercontent.com/mathworks/MATLAB-extension-for-vscode/main/public/L-Membrane_RGB_128x128.png"
+  },
+  {
+    "path": "assets/logo-vllm-dark.png",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/assets/logos/vllm-logo-text-dark.png"
+  },
+  {
+    "path": "assets/logo-vllm-light.png",
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/assets/logos/vllm-logo-text-light.png"
+  }
+]
