@@ -1,76 +1,34 @@
-# Editing the profile
+# Editing the GitHub profile
 
-## Ordinary wording and links
+The published front page is the root `README.md`. It uses ordinary Markdown for the
+name, introduction, publication list, links, and methods. Edit that file directly.
+`README-static.md` is retained as a matching copy; after editing the front page, copy
+`README.md` over it so the two do not drift.
 
-Edit the root `README.md`. The biography, numbered research headings, descriptions,
-project links, and toolchain section headings are ordinary Markdown/HTML text.
-The project headings use the same native font and baseline for their numbers and titles.
-There are no layout tables or image-based project titles.
+The only display assets are the restrained divider in
+`assets/profile-v5/research-thread-light.svg` and
+`assets/profile-v5/research-thread-dark.svg`. Keep both variants in sync if changing
+its colors or geometry. The profile needs no custom CSS, JavaScript, external image
+service, or animation.
 
-## Artwork text
+Publication titles, venues, authorship labels, summaries, and links should be checked
+against the papers before changing them. The current publication sources are the
+arXiv preprint, the AAAI proceedings page, and the Science Advances DOI linked in the
+README.
 
-The animated console and research-focus panel are generated graphics. Change the relevant
-strings in `design/profile.json`, then rebuild them. The required third subtitle is:
+## Check and preview
 
-```
-Hierarchical models · MCMC
-```
-
-A pre-rendered static alternative is included as `README-static.md`. Use that file as
-`README.md` to disable the console animation.
-
-## Optional rebuilding
-
-No rebuilding is needed to publish. For later graphic changes, install the packages in
-`tools/requirements.txt`. Fonts are read from your own computer; no font files are bundled.
-The builder prefers Inter and DejaVu Sans Mono. A system Arial fallback is supported.
-`PROFILE_FONT_DIR` can point to your local Inter/DejaVu font directory.
-
-```
-python3 -m pip install -r tools/requirements.txt
-python3 tools/build_profile.py --assets-only
-python3 tools/validate_profile.py
-```
-
-`--assets-only` preserves hand-edited README text. To regenerate the README from the
-configuration as well, omit that flag; back up your text first.
-
-Toolchain caption text and group membership are in `design/toolchain.json`.
-The supplied tool marks retain the previous kit's artwork. See `ICON-SOURCES.md` for
-reconstructed and representative marks; do not describe them all as official artwork.
-
-## Layout
-
-Each header panel has a 312 × 250 display footprint. Together they take approximately
-629 pixels including ordinary inline spacing; they wrap to separate rows on narrow
-screens. There are no mobile-specific image sources to accidentally stretch on desktop.
-The animation is rendered at 936 × 750 pixels (3× its display size). The focus panel is
-vector artwork. Navigation is 30 pixels high. Tool tiles have an 80 × 66 display footprint.
-
-The README does not depend on the CSS or JavaScript in the browser preview. Preview files
-are conveniences, not deployment requirements. After changing README wording, regenerate
-the preview with `python3 tools/make_preview.py` (requires markdown-it-py).
-
-
-## Console scene sequence
-
-The animated console cycles through `whoami`, `cat research.txt`, and
-`ls selected-work/`. `research.focus` is the separate right-hand panel title;
-it is not another command. This is a decorative animation, not a live terminal.
-
-Edit `console_scenes` in `design/profile.json` to change command text, output lines,
-and each completed scene's reading pause (`hold_ms`). Keep each scene to three
-output lines. `console_static_scene` chooses the static fallback (currently
-`research`). The top name and affiliation stay visible throughout.
-
-Rebuild only the console, preserving the README, focus panel, all logos and layout:
+From the repository root:
 
 ```bash
-python3 tools/build_profile.py --animation-only
 python3 tools/validate_profile.py
 python3 tools/make_preview.py
 ```
 
-Do not edit only the generated GIF when maintaining the repository sources: retain
-the matching `design/profile.json` and `tools/build_profile.py` as well. Rebuilding
-from older source files would restore the old one-scene loop.
+The preview generator accepts `markdown-it-py` or Pandoc. Open `PREVIEW-local.html`
+for a local approximation of the GitHub page; `PREVIEW.html` embeds the divider and
+can be shared as one file. GitHub's own rendering remains the final authority.
+
+`tools/build_profile.py`, `design/profile.json`, and `assets/profile-v4/` belong to
+the previous animated profile. The builder now preserves the current README even if
+it is run. None of those archived assets are needed to display the front page.

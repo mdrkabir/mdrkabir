@@ -1,56 +1,95 @@
 #!/usr/bin/env python3
-"""Offline, standard-library-only validation for the complete profile bundle."""
+"""Validate the GitHub profile README and its local light/dark artwork."""
 from __future__ import annotations
-import json,re,sys,xml.etree.ElementTree as ET
+
+import json
+import re
+import sys
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
 class ProfileParser(HTMLParser):
     def __init__(self):
-        super().__init__();self.refs=set();self.images=[];self.errors=[]
-    def handle_starttag(self,tag,attrs):
-        a=dict(attrs)
-        if tag in {'script','style','iframe','table','ruby'}:self.errors.append('Unsupported layout element: '+tag)
-        if any(k in a for k in ('style','class','id')):self.errors.append('README must not depend on custom CSS: '+tag)
-        if tag=='img':
-            self.images.append(a)
-            if not a.get('alt'):self.errors.append('Missing alternative text')
-            if not a.get('width','').isdigit():self.errors.append('Explicit numeric image width required')
-            elif int(a['width'])>312:self.errors.append('Display image larger than the 312px panel cap')
-        path=a.get('src' if tag=='img' else 'srcset' if tag=='source' else '', '')
-        if path:
-            if not path.startswith('assets/profile-v4/'):self.errors.append('Non-local or old-generation image: '+path)
-            self.refs.add(path)
+        super().__init__()
+        self.refs = set()
+        self.images = []
+        self.errors = []
+
+    def handle_starttag(self, tag, attrs):
+        attr = dict(attrs)
+        if tag in {'script', 'style', 'iframe', 'table'}:
+            self.errors.append(f'Unsupported README element: {tag}')
+        if any(key in attr for key in ('style', 'class', 'id')):
+            self.errors.append(f'Custom CSS dependency on {tag}')
+        if tag == 'img':
+            self.images.append(attr)
+            if 'alt' not in attr:
+                self.errors.append('Image is missing alt text')
+            width = attr.get('width', '')
+            if not width.isdigit() or int(width) > 760:
+                self.errors.append('Image width must be numeric and at most 760px')
+        for key in ('src', 'srcset'):
+            if key in attr:
+                path = attr[key]
+                if not path.startswith('assets/profile-v5/'):
+                    self.errors.append(f'Unexpected image path: {path}')
+                self.refs.add(path)
+
 
 def main():
-    errors=[];report={};refs=set()
-    for name in ('README.md','README-static.md'):
-        data=(ROOT/name).read_text();p=ProfileParser();p.feed(data)
-        for path in p.refs:
-            f=ROOT/path
-            if not f.is_file():p.errors.append('Missing asset: '+path);continue
-            b=f.read_bytes()
-            if f.suffix=='.svg':
-                try:
-                    r=ET.fromstring(b)
-                    for e in r.iter():
-                        if e.tag.endswith('script'):p.errors.append('Script in image '+path)
-                        for k,v in e.attrib.items():
-                            if k.endswith('href') and v.startswith(('http','file:')):p.errors.append('External dependency in '+path)
-                except ET.ParseError:p.errors.append('Invalid SVG '+path)
-            elif f.suffix=='.png' and not b.startswith(b'\x89PNG\r\n\x1a\n'):p.errors.append('Invalid PNG '+path)
-            elif f.suffix=='.gif' and b[:6] not in (b'GIF87a',b'GIF89a'):p.errors.append('Invalid GIF '+path)
-        if len(re.findall(r'^#### ',data,re.M))!=5:p.errors.append('Expected five toolchain sections')
-        if re.findall(r'^### (\d{2}) · ',data,re.M)!=['01','02','03']:p.errors.append('Expected three numbered native headings')
-        if 'FSDP' in data or 'LaTeX' in data:p.errors.append('Excluded tool present')
-        if 'Hierarchical models · MCMC' not in data:p.errors.append('Missing required focus wording')
-        report[name]={'images':len(p.images),'local_assets':len(p.refs),'errors':p.errors}
-        errors+=p.errors;refs|=p.refs
-    cfg=json.loads((ROOT/'design/profile.json').read_text())
-    if cfg['focus'][2]['subtitle']!=['Hierarchical models · MCMC']:errors.append('Configuration text mismatch')
-    for t in ['light','dark']:
-        if 'Hierarchical models · MCMC' not in (ROOT/f'assets/profile-v4/focus-{t}.svg').read_text():errors.append('Research focus not regenerated for '+t)
-    if any(ROOT.rglob('*.ttf')) or any(ROOT.rglob('*.otf')) or any(ROOT.rglob('*.woff*')):errors.append('Do not distribute font files')
-    report['total_assets']=len(refs);report['errors']=errors;report['result']='FAIL' if errors else 'PASS'
-    print(json.dumps(report,indent=2));return bool(errors)
-if __name__=='__main__':sys.exit(main())
+    errors = []
+    readme = (ROOT / 'README.md').read_text()
+    static = (ROOT / 'README-static.md').read_text()
+    if readme != static:
+        errors.append('README-static.md must match the static README.md')
+    if not readme.startswith('# Md Rysul Kabir\n'):
+        errors.append('Missing profile heading')
+    if '## Selected research' not in readme:
+        errors.append('Missing selected research section')
+    if len(re.findall(r'^### ', readme, re.M)) != 3:
+        errors.append('Expected three selected publications')
+    if len(re.findall(r'\[Paper ↗\]\(https://', readme)) != 3:
+        errors.append('Expected three paper links')
+    if 'profile-v4/' in readme or '.gif' in readme:
+        errors.append('The current README references archived artwork')
+
+    parser = ProfileParser()
+    parser.feed(readme)
+    errors.extend(parser.errors)
+    expected = {f'assets/profile-v5/research-thread-{theme}.svg'
+                for theme in ('light', 'dark')}
+    if parser.refs != expected:
+        errors.append(f'Unexpected artwork references: {sorted(parser.refs)}')
+    for path in parser.refs:
+        asset = ROOT / path
+        if not asset.is_file():
+            errors.append(f'Missing artwork: {path}')
+            continue
+        try:
+            root = ET.parse(asset).getroot()
+        except ET.ParseError:
+            errors.append(f'Invalid SVG: {path}')
+            continue
+        for element in root.iter():
+            if element.tag.endswith('script'):
+                errors.append(f'Script in artwork: {path}')
+            for key, value in element.attrib.items():
+                if key.endswith('href') and value.startswith(('http:', 'https:', 'file:')):
+                    errors.append(f'External artwork dependency: {path}')
+
+    fonts = [path for pattern in ('*.ttf', '*.otf', '*.woff', '*.woff2')
+             for path in ROOT.rglob(pattern)]
+    if fonts:
+        errors.append('Font files should not be bundled')
+    report = {'images': len(parser.images), 'assets': sorted(parser.refs),
+              'errors': errors, 'result': 'FAIL' if errors else 'PASS'}
+    print(json.dumps(report, indent=2))
+    return bool(errors)
+
+
+if __name__ == '__main__':
+    sys.exit(main())

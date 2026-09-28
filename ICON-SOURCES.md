@@ -1,4 +1,7 @@
-# Asset provenance and limitations
+# Archived asset provenance and limitations
+
+These sources document artwork from the previous profile-v4 design. The current
+`README.md` does not display these icons.
 
 Product names and marks belong to their respective owners. No endorsement is
 implied. This file distinguishes source-derived art, reconstructed art, and

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a GitHub-safe profile from local source assets.
+"""Build the archived profile-v4 artwork without modifying the current README.
 
 Requirements: Pillow, CairoSVG, fonttools. No network, accounts, or font downloads.
 Fonts are used from the local system and are NOT copied into this repository.
@@ -242,39 +242,10 @@ def make_tile(key,label,theme):
     im.alpha_composite(Image.open(io.BytesIO(cairosvg.svg2png(bytestring=labels.encode(),scale=3))).convert('RGBA'))
     im.save(OUT/f'tool-{key}-{theme}.png',optimize=True)
 
-def picture(stem,alt,width,ext='svg',height=None):
-    s=f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v4/{stem}-dark.{ext}"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v4/{stem}-light.{ext}"><img src="assets/profile-v4/{stem}-light.{ext}" alt="{html.escape(alt,quote=True)}" width="{width}"'
-    if height:s+=f' height="{height}"'
-    return s+'></picture>'
-
-def write_readme():
-    navs=[('scholar','Google Scholar',126,'https://scholar.google.com/citations?user=-BT9-3AAAAAJ&hl=en'),('linkedin','LinkedIn',100,'https://www.linkedin.com/in/mdrysulkabir/'),('repositories','Repositories',122,'https://github.com/mdrkabir?tab=repositories')]
-    for key,label,w,url in navs:
-        for t in PALETTES:(OUT/f'nav-{key}-{t}.svg').write_text(nav(key,label,t,w))
-    lines=['<!-- Self-contained profile: upload README.md and assets/profile-v4/. -->',
-      '<!-- Two equal-sized panels wrap naturally; no mobile-image selection or custom CSS. -->','',
-      '<p>'+picture('console',CFG['name']+' — animated research console',PANEL_W,'gif',PANEL_H)+' '+picture('focus','Large language models: Post-training · Interpretability. Reinforcement learning: Policy optimization · Reward shaping. Probabilistic modeling: Hierarchical models · MCMC.',PANEL_W,'svg',PANEL_H)+'</p>','',
-      '<p>'+' '.join('<a href="'+html.escape(url,quote=True)+'" title="'+label+'">'+picture('nav-'+key,label,w,'svg',30)+'</a>' for key,label,w,url in navs)+'</p>','',CFG['bio'],'','## research.registry','']
-    for project in CFG['projects']:
-        lines += ['### '+project['id']+' · '+project['title'],'', '<p>'+picture('meta-'+project['id'],project['venue'],260,'svg',22)+'</p>','',project['description'],'']
-        links=f'**[Paper ↗]({project["paper"]})**'
-        if project.get('code'):links+=f' &nbsp; · &nbsp; **[Code ↗]({project["code"]})**'
-        lines += [links+' &nbsp; · &nbsp; '+' · '.join('`'+t+'`' for t in project['tags']),'']
-    lines += ['## toolchain','','<!-- Tool marks retain the prior kit’s artwork; provenance is in ICON-SOURCES.md. -->','']
-    for heading,tools in GROUPS:
-        lines += ['#### '+heading,'','<p>']
-        lines += ['<a href="'+html.escape(url,quote=True)+'" title="'+html.escape(label,quote=True)+'">'+picture('tool-'+key,label,80,'png',66)+'</a>' for key,label,url in tools]
-        lines += ['</p>','']
-    lines += ['---','','<sub>Research focus: LLM post-training · model behavior · evaluation</sub>','']
-    content='\n'.join(lines)
-    (ROOT/'README.md').write_text(content)
-    (ROOT/'README-static.md').write_text(content.replace('console-dark.gif','console-dark-still.png').replace('console-light.gif','console-light-still.png'))
-
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--skip-animation',action='store_true')
     parser.add_argument('--animation-only',action='store_true',help='Rebuild only the console GIFs and stills; preserve README, focus, navigation, and toolchain')
-    parser.add_argument('--assets-only',action='store_true',help='Preserve hand-edited README text')
     args=parser.parse_args()
     if args.animation_only:
         if args.skip_animation:
@@ -287,5 +258,4 @@ if __name__=='__main__':
         for pr in CFG['projects']:(OUT/f'meta-{pr["id"]}-{theme}.svg').write_text(meta(pr,theme))
         for _,tools in GROUPS:
             for key,label,_ in tools:make_tile(key,label,theme)
-    if not args.assets_only:write_readme()
-    print('Built local display assets. No font files or external images are used.')
+    print('Built archived profile-v4 assets; the current README was preserved.')

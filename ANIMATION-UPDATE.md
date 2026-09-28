@@ -1,4 +1,7 @@
-# Research console: three-scene loop restored
+# Archived research console update
+
+This note describes the previous profile-v4 design. The current GitHub front page
+is the text-first `README.md` and does not use the animated console.
 
 The current animation replaces the accidental single-command loop. It cycles through:
 

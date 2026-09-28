@@ -1,8 +1,15 @@
 from pathlib import Path
-import base64,mimetypes,re
-from markdown_it import MarkdownIt
+import base64,mimetypes,re,shutil,subprocess
 ROOT=Path(__file__).resolve().parents[1]
-body=MarkdownIt('commonmark',{'html':True}).render((ROOT/'README.md').read_text())
+readme=(ROOT/'README.md').read_text()
+try:
+    from markdown_it import MarkdownIt
+    body=MarkdownIt('commonmark',{'html':True}).render(readme)
+except ImportError:
+    if not shutil.which('pandoc'):
+        raise SystemExit('Install markdown-it-py or pandoc to generate the preview.')
+    body=subprocess.run(['pandoc','--from=gfm+raw_html','--to=html'],input=readme,
+                        text=True,capture_output=True,check=True).stdout
 # Public output is generated from README, not an independent mockup layout.
 css='''
 *{box-sizing:border-box}html{color-scheme:light;--bg:#fff;--fg:#1f2328;--muted:#59636e;--line:#d1d9e0;--link:#0969da;--code:#eff1f3}
@@ -13,6 +20,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bli
 .preview-controls button{border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:var(--bg);color:var(--fg);font:inherit;cursor:pointer}
 .markdown-body{max-width:854px;margin:16px auto;padding:32px;font-size:16px;line-height:1.5;word-wrap:break-word}
 .markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}
+.markdown-body h1{font-size:2em;font-weight:600;line-height:1.25;margin:24px 0 16px;padding-bottom:.3em;border-bottom:1px solid var(--line)}
 .markdown-body h2{font-size:1.5em;font-weight:600;line-height:1.25;margin:24px 0 16px;padding-bottom:.3em;border-bottom:1px solid var(--line)}
 .markdown-body h3{font-size:1.25em;font-weight:600;line-height:1.25;margin:24px 0 16px}
 .markdown-body h4{font-size:1em;font-weight:600;line-height:1.25;margin:24px 0 16px}
@@ -26,7 +34,7 @@ bar='<div class="preview-controls"><span>Local rendering of the included README<
 script='''document.querySelectorAll('source').forEach(s=>s.dataset.theme=s.media.includes('dark')?'dark':'light');
 function setTheme(value){document.documentElement.dataset.theme=value;document.querySelectorAll('picture').forEach(p=>{let s=p.querySelector('source[data-theme=\"'+value+'\"]');let img=p.querySelector('img');if(s){p.querySelectorAll('source').forEach(el=>el.media='not all');img.src=s.srcset}})}
 '''
-head='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Option C — compact layout</title><style>'+css+'</style></head><body>'
+head='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Md Rysul Kabir — profile preview</title><style>'+css+'</style></head><body>'
 tail='</article><script>'+script+'</script></body></html>'
 page=head+bar+'<article class="markdown-body">'+body+tail
 (ROOT/'PREVIEW-local.html').write_text(page)
