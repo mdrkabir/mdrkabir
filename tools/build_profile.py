@@ -76,8 +76,16 @@ def svg(body,w,h,title):
 PANEL_W, PANEL_H = 312, 250
 SCALE=3
 
-def console_panel(theme,command='cat research.txt',visible=3,cursor=False):
+def console_panel(theme,command=None,visible=3,cursor=False,scene=1):
     p=PALETTES[theme]; w,h=PANEL_W,PANEL_H
+    block=CFG['console_scenes'][scene]
+    if command is None: command=block['command']
+    output=block['lines']
+    if not 0 <= visible <= len(output):
+        raise ValueError('Invalid visible line count')
+    colors=block.get('colors',['purple','cyan','amber'])
+    if len(output)>3 or len(colors)!=len(output):
+        raise ValueError('The compact console supports up to three output lines')
     s=rect(.5,.5,w-1,h-1,p['panel'],10,p['line'])
     s+='<path d="M10 1H302Q311 1 311 10V31H1V10Q1 1 10 1Z" fill="'+p['bar']+'"/>'
     for cx,c in [(15,'#CD8494'),(26,'#BC9B5F'),(37,'#61A49B')]:s+=f'<circle cx="{cx}" cy="16" r="2.5" fill="{c}"/>'
@@ -90,11 +98,14 @@ def console_panel(theme,command='cat research.txt',visible=3,cursor=False):
     x=18+measure(prompt,10.2,'mono')+8
     s+=txt(x,145,command,10.2,p['text'],'mono')
     if cursor:s+=rect(x+measure(command,10.2,'mono')+2,136,4.5,10,p['faint'])
+    if x+measure(command,10.2,'mono')+7>294:
+        raise ValueError('Console command is too long: '+command)
     for i in range(visible):
-        key=['purple','cyan','amber'][i]; y=170+21*i
+        key=colors[i]; y=170+21*i
         s+=rect(18,y-9,2,11,p[key],1)
-        assert measure(CFG['terminal'][i],10.4,'mono')<274
-        s+=txt(27,y,CFG['terminal'][i],10.4,p[key],'mono')
+        if measure(output[i],10.4,'mono')>267:
+            raise ValueError('Console output is too long: '+output[i])
+        s+=txt(27,y,output[i],10.4,p[key],'mono')
     s+=line(18,230,294,230,p['line'])
     s+=txt(18,243,'learning methods → model behavior',8,p['faint'],'mono')
     return svg(s,w,h,'Animated research console — '+CFG['name'])
@@ -125,27 +136,65 @@ def raster(svg_text):
     # Do not quantize onto transparency: blend around the corner using theme bg.
     return rgba
 
-def write_console(theme):
-    full=console_panel(theme)
+def console_timeline():
+    """Return every frame's semantic state; timings are in milliseconds.
+
+    A complete whoami output is the opening frame so a thumbnail is meaningful.
+    The loop then types research, selected work, and whoami again. Completed
+    outputs pause for reading. The closing whoami flows into the first frame.
+    """
+    scenes=CFG['console_scenes']
+    if [b['id'] for b in scenes]!=['identity','research','selected-work']:
+        raise ValueError('Expected identity, research, selected-work scenes')
+    def state(i,command,visible,cursor,ms,phase):
+        if ms<=0 or ms%10:
+            raise ValueError('GIF frame timing must be a positive multiple of 10ms')
+        return dict(scene=i,scene_id=scenes[i]['id'],command=command,visible=visible,
+                    cursor=cursor,duration_ms=ms,phase=phase)
+    states=[state(0,scenes[0]['command'],3,False,scenes[0]['hold_ms'],'hold')]
+    for i in [1,2,0]:
+        command=scenes[i]['command']
+        states.append(state(i,'',0,True,220,'clear'))
+        for n in range(1,len(command)+1):
+            states.append(state(i,command[:n],0,True,70,'type'))
+        states.append(state(i,command,0,True,200,'execute'))
+        for n in range(1,4):
+            states.append(state(i,command,n,True,220,'reveal'))
+        if i!=0:
+            states.append(state(i,command,3,False,scenes[i]['hold_ms'],'hold'))
+            states.append(state(i,command,3,True,350,'cursor'))
+            states.append(state(i,command,3,False,350,'cursor'))
+    return states
+
+def write_console(theme,include_focus=True):
+    static_id=CFG.get('console_static_scene','research')
+    scene_ids=[b['id'] for b in CFG['console_scenes']]
+    static_index=scene_ids.index(static_id)
+    full=console_panel(theme,scene=static_index)
     (OUT/f'console-{theme}.svg').write_text(full)
-    rgba=raster(full)
-    rgba.save(OUT/f'console-{theme}-still.png')
-    bg=Image.new('RGB',rgba.size,PALETTES[theme]['bg']); bg.paste(rgba,mask=rgba.getchannel('A'))
-    pal=bg.quantize(colors=256,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE)
-    cmd='cat research.txt'
-    states=[(cmd,3,False,5500),('',0,True,240)]
-    states += [(cmd[:n],0,True,60) for n in range(1,len(cmd)+1)]
-    states += [(cmd,1,True,240),(cmd,2,True,240),(cmd,3,True,800),(cmd,3,False,600)]
+    raster(full).save(OUT/f'console-{theme}-still.png')
+    def flatten(rgba):
+        im=Image.new('RGB',rgba.size,PALETTES[theme]['bg'])
+        im.paste(rgba,mask=rgba.getchannel('A'))
+        return im
+    # Derive one palette from all three completed scenes, avoiding palette flicker.
+    panels=[flatten(raster(console_panel(theme,scene=i,cursor=True))) for i in range(3)]
+    atlas=Image.new('RGB',(panels[0].width*3,panels[0].height))
+    for i,im in enumerate(panels):atlas.paste(im,(i*im.width,0))
+    palette=atlas.quantize(colors=256,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE)
+    states=console_timeline()
     frames=[];durations=[]
-    for command,visible,cursor,ms in states:
-        rgba=raster(console_panel(theme,command,visible,cursor))
-        im=Image.new('RGB',rgba.size,PALETTES[theme]['bg']);im.paste(rgba,mask=rgba.getchannel('A'))
-        frames.append(im.quantize(palette=pal,dither=Image.Dither.NONE));durations.append(ms)
-    frames[0].save(OUT/f'console-{theme}.gif',save_all=True,append_images=frames[1:],duration=durations,loop=0,disposal=1,optimize=True)
-    foc=focus_panel(theme)
-    (OUT/f'focus-{theme}.svg').write_text(foc)
-    raster(foc).save(OUT/f'focus-{theme}.png')
-    print('Built header',theme,flush=True)
+    for st in states:
+        rgba=raster(console_panel(theme,st['command'],st['visible'],st['cursor'],scene=st['scene']))
+        frames.append(flatten(rgba).quantize(palette=palette,dither=Image.Dither.NONE))
+        durations.append(st['duration_ms'])
+    frames[0].save(OUT/f'console-{theme}.gif',save_all=True,append_images=frames[1:],
+                  duration=durations,loop=0,disposal=1,optimize=True)
+    if include_focus:
+        foc=focus_panel(theme)
+        (OUT/f'focus-{theme}.svg').write_text(foc)
+        raster(foc).save(OUT/f'focus-{theme}.png')
+    print('Built three-scene animation',theme,'('+str(sum(durations)/1000)+'s)',flush=True)
 
 def nav(key,label,theme,width):
     import xml.etree.ElementTree as ET
@@ -224,8 +273,15 @@ def write_readme():
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--skip-animation',action='store_true')
+    parser.add_argument('--animation-only',action='store_true',help='Rebuild only the console GIFs and stills; preserve README, focus, navigation, and toolchain')
     parser.add_argument('--assets-only',action='store_true',help='Preserve hand-edited README text')
     args=parser.parse_args()
+    if args.animation_only:
+        if args.skip_animation:
+            parser.error('--animation-only cannot be combined with --skip-animation')
+        for theme in PALETTES:write_console(theme,include_focus=False)
+        print('Console-only rebuild complete. All other assets and README preserved.')
+        raise SystemExit(0)
     for theme in PALETTES:
         if not args.skip_animation:write_console(theme)
         for pr in CFG['projects']:(OUT/f'meta-{pr["id"]}-{theme}.svg').write_text(meta(pr,theme))

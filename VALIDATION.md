@@ -1,28 +1,37 @@
-# Checks performed on this bundle
+# Checks performed on the restored console bundle
 
-This is a local check, not verification on the owner's live GitHub profile.
+These are local checks, not verification on the live GitHub profile.
 
-- The README's native headings and actual local artwork were rendered in Chromium.
-  The preview uses a GitHub-style Markdown stylesheet without hiding table borders or
-  applying profile-specific layout classes. The README itself contains no custom CSS.
-- Tested light and dark color schemes at 320, 390, 760, and 1060-pixel viewport widths.
-- Both header panels have identical 312 × 250 display footprints. At desktop widths
-  they share the same top edge; on mobile they wrap to the same left edge.
-- Research heading prefixes (01, 02, 03) have matching measured left positions and widths.
-- No horizontal page overflow or missing images occurred in these eight local cases.
-- All 70 distinct image dependencies across the animated and static READMEs are local.
-- Both console GIFs contain 22 frames, rendered at 936 × 750 pixels. Each cycle lasts
-  8.58 seconds and begins with 5.5 seconds of fully readable completed text.
-- The focus panel is a separate vector image. Both theme variants contain the exact
-  subtitle `Hierarchical models · MCMC`.
-- Light/dark preview buttons were toggled repeatedly and loaded all images successfully.
-- Five toolchain categories remain. FSDP and LaTeX are excluded.
+## Animation
+
+- The loop is `whoami` → `cat research.txt` → `ls selected-work/` → repeat.
+- Both theme GIFs are 936 × 750 pixels, with 58 encoded frames and a 16.97-second
+  cycle. Each completed scene has a 3.2-second reading pause.
+- Every one of the 61 semantic timeline states was sampled in the decoded GIF.
+  Each matched its expected palette-quantized rendering exactly in both themes.
+- Fixed chrome, identity text, and the footer were pixel-identical across all frames.
+- A single shared palette per theme prevents palette changes between scenes.
+- The static alternative remains the completed research summary, as before.
+
+## Preservation
+
+- README.md and README-static.md are byte-for-byte identical to the MATLAB-corrected
+  base repository.
+- Only two visual assets changed: console-light.gif and console-dark.gif.
+- Research focus, navigation, metadata, toolchain graphics, and the corrected MATLAB
+  marks are byte-for-byte unchanged. The Hierarchical models · MCMC subtitle remains.
+- Animation dimensions and both 312 × 250-pixel header display footprints are unchanged.
+- All 70 distinct image references in the animated/static READMEs resolve to local files.
 - No font files are distributed.
 
-Raw results: `design/validation.json`, `design/layout-checks.json`, and
-`design/animation-checks.json`. Existing reconstructed-tool-logo caveats remain in
-`ICON-SOURCES.md`.
+## Local rendering
 
-The screenshot previews freeze the console on its completed first frame. The included
-`PREVIEW.html` and README use the actual animated file. GitHub's current exact typography
-and spacing may differ from the locally approximated stylesheet.
+The included README was rendered in Chromium in light and dark themes at 390 and
+1060-pixel viewport widths. All images loaded, both panels retained their 312 × 250
+footprint, and no horizontal page overflow occurred. The screenshot previews freeze
+only the console to its decoded first frame for consistent captures. HTML previews
+and README.md use the complete animated GIFs. This stylesheet approximates GitHub;
+it is not a live GitHub rendering.
+
+Raw results: design/animation-checks.json, design/layout-checks.json,
+design/asset-checksums.json, and design/validation.json.

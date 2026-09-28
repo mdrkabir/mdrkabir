@@ -1,674 +1,90 @@
 [
   {
-    "overflow": false,
+    "viewport": 390,
+    "content": 390,
     "missing": [],
-    "images": 34,
-    "header": [
-      {
-        "x": 16,
-        "y": 105.59375,
-        "w": 288,
-        "h": 230.765625
-      },
-      {
-        "x": 16,
-        "y": 343.359375,
-        "w": 288,
-        "h": 230.765625
-      }
-    ],
-    "nav": [
-      {
-        "x": 16,
-        "y": 597.125,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 146.453125,
-        "y": 597.125,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 16,
-        "y": 634.125,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 16,
-        "y": 965.3125,
-        "w": 288,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 16,
-        "y": 1235.3125,
-        "w": 288,
-        "h": 50
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 16,
-        "y": 1506.3125,
-        "w": 288,
-        "h": 50
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 16,
-        "y": 966.3125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1236.3125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1507.3125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "light",
-    "viewport": 320
-  },
-  {
-    "overflow": false,
-    "missing": [],
-    "images": 34,
     "header": [
       {
         "x": 16,
         "y": 81.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/gif;base64"
       },
       {
         "x": 16,
         "y": 338.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/svg+xml;base64"
       }
     ],
-    "nav": [
-      {
-        "x": 16,
-        "y": 611.59375,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 146.453125,
-        "y": 611.59375,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 250.90625,
-        "y": 611.59375,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 16,
-        "y": 918.78125,
-        "w": 358,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 16,
-        "y": 1164.78125,
-        "w": 358,
-        "h": 50
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 16,
-        "y": 1435.78125,
-        "w": 358,
-        "h": 50
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 16,
-        "y": 919.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1165.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1436.78125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "light",
-    "viewport": 390
+    "theme": "light"
   },
   {
-    "overflow": false,
+    "viewport": 1060,
+    "content": 1060,
     "missing": [],
-    "images": 34,
-    "header": [
-      {
-        "x": 32,
-        "y": 97.59375,
-        "w": 312,
-        "h": 250
-      },
-      {
-        "x": 348.453125,
-        "y": 97.59375,
-        "w": 312,
-        "h": 250
-      }
-    ],
-    "nav": [
-      {
-        "x": 32,
-        "y": 370.59375,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 162.453125,
-        "y": 370.59375,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 266.90625,
-        "y": 370.59375,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 32,
-        "y": 581.78125,
-        "w": 696,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 32,
-        "y": 779.78125,
-        "w": 696,
-        "h": 25
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 32,
-        "y": 977.78125,
-        "w": 696,
-        "h": 25
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 32,
-        "y": 582.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 32,
-        "y": 780.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 32,
-        "y": 978.78125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "light",
-    "viewport": 760
-  },
-  {
-    "overflow": false,
-    "missing": [],
-    "images": 34,
     "header": [
       {
         "x": 135,
         "y": 97.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/gif;base64"
       },
       {
         "x": 451.453125,
         "y": 97.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/svg+xml;base64"
       }
     ],
-    "nav": [
-      {
-        "x": 135,
-        "y": 370.59375,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 265.453125,
-        "y": 370.59375,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 369.90625,
-        "y": 370.59375,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 135,
-        "y": 581.78125,
-        "w": 790,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 135,
-        "y": 779.78125,
-        "w": 790,
-        "h": 25
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 135,
-        "y": 977.78125,
-        "w": 790,
-        "h": 25
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 135,
-        "y": 582.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 135,
-        "y": 780.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 135,
-        "y": 978.78125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "light",
-    "viewport": 1060
+    "theme": "light"
   },
   {
-    "overflow": false,
+    "viewport": 390,
+    "content": 390,
     "missing": [],
-    "images": 34,
-    "header": [
-      {
-        "x": 16,
-        "y": 105.59375,
-        "w": 288,
-        "h": 230.765625
-      },
-      {
-        "x": 16,
-        "y": 343.359375,
-        "w": 288,
-        "h": 230.765625
-      }
-    ],
-    "nav": [
-      {
-        "x": 16,
-        "y": 597.125,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 146.453125,
-        "y": 597.125,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 16,
-        "y": 634.125,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 16,
-        "y": 965.3125,
-        "w": 288,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 16,
-        "y": 1235.3125,
-        "w": 288,
-        "h": 50
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 16,
-        "y": 1506.3125,
-        "w": 288,
-        "h": 50
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 16,
-        "y": 966.3125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1236.3125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1507.3125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "dark",
-    "viewport": 320
-  },
-  {
-    "overflow": false,
-    "missing": [],
-    "images": 34,
     "header": [
       {
         "x": 16,
         "y": 81.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/gif;base64"
       },
       {
         "x": 16,
         "y": 338.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/svg+xml;base64"
       }
     ],
-    "nav": [
-      {
-        "x": 16,
-        "y": 611.59375,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 146.453125,
-        "y": 611.59375,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 250.90625,
-        "y": 611.59375,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 16,
-        "y": 918.78125,
-        "w": 358,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 16,
-        "y": 1164.78125,
-        "w": 358,
-        "h": 50
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 16,
-        "y": 1435.78125,
-        "w": 358,
-        "h": 50
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 16,
-        "y": 919.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1165.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 16,
-        "y": 1436.78125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "dark",
-    "viewport": 390
+    "theme": "dark"
   },
   {
-    "overflow": false,
+    "viewport": 1060,
+    "content": 1060,
     "missing": [],
-    "images": 34,
-    "header": [
-      {
-        "x": 32,
-        "y": 97.59375,
-        "w": 312,
-        "h": 250
-      },
-      {
-        "x": 348.453125,
-        "y": 97.59375,
-        "w": 312,
-        "h": 250
-      }
-    ],
-    "nav": [
-      {
-        "x": 32,
-        "y": 370.59375,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 162.453125,
-        "y": 370.59375,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 266.90625,
-        "y": 370.59375,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 32,
-        "y": 581.78125,
-        "w": 696,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 32,
-        "y": 779.78125,
-        "w": 696,
-        "h": 25
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 32,
-        "y": 977.78125,
-        "w": 696,
-        "h": 25
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 32,
-        "y": 582.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 32,
-        "y": 780.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 32,
-        "y": 978.78125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "dark",
-    "viewport": 760
-  },
-  {
-    "overflow": false,
-    "missing": [],
-    "images": 34,
     "header": [
       {
         "x": 135,
         "y": 97.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/gif;base64"
       },
       {
         "x": 451.453125,
         "y": 97.59375,
-        "w": 312,
-        "h": 250
+        "width": 312,
+        "height": 250,
+        "source_type": "data:image/svg+xml;base64"
       }
     ],
-    "nav": [
-      {
-        "x": 135,
-        "y": 370.59375,
-        "w": 126,
-        "h": 30
-      },
-      {
-        "x": 265.453125,
-        "y": 370.59375,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "x": 369.90625,
-        "y": 370.59375,
-        "w": 122,
-        "h": 30
-      }
-    ],
-    "titles": [
-      {
-        "text": "01 \u00b7 LLM behavior & safety",
-        "x": 135,
-        "y": 581.78125,
-        "w": 790,
-        "h": 25
-      },
-      {
-        "text": "02 \u00b7 Reinforcement learning with memory",
-        "x": 135,
-        "y": 779.78125,
-        "w": 790,
-        "h": 25
-      },
-      {
-        "text": "03 \u00b7 Bayesian model of path integration",
-        "x": 135,
-        "y": 977.78125,
-        "w": 790,
-        "h": 25
-      }
-    ],
-    "titlePrefixes": [
-      {
-        "x": 135,
-        "y": 582.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 135,
-        "y": 780.78125,
-        "w": 22.25,
-        "h": 22
-      },
-      {
-        "x": 135,
-        "y": 978.78125,
-        "w": 22.25,
-        "h": 22
-      }
-    ],
-    "theme": "dark",
-    "viewport": 1060
+    "theme": "dark"
   }
 ]

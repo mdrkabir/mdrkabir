@@ -50,3 +50,27 @@ vector artwork. Navigation is 30 pixels high. Tool tiles have an 80 × 66 displa
 The README does not depend on the CSS or JavaScript in the browser preview. Preview files
 are conveniences, not deployment requirements. After changing README wording, regenerate
 the preview with `python3 tools/make_preview.py` (requires markdown-it-py).
+
+
+## Console scene sequence
+
+The animated console cycles through `whoami`, `cat research.txt`, and
+`ls selected-work/`. `research.focus` is the separate right-hand panel title;
+it is not another command. This is a decorative animation, not a live terminal.
+
+Edit `console_scenes` in `design/profile.json` to change command text, output lines,
+and each completed scene's reading pause (`hold_ms`). Keep each scene to three
+output lines. `console_static_scene` chooses the static fallback (currently
+`research`). The top name and affiliation stay visible throughout.
+
+Rebuild only the console, preserving the README, focus panel, all logos and layout:
+
+```bash
+python3 tools/build_profile.py --animation-only
+python3 tools/validate_profile.py
+python3 tools/make_preview.py
+```
+
+Do not edit only the generated GIF when maintaining the repository sources: retain
+the matching `design/profile.json` and `tools/build_profile.py` as well. Rebuilding
+from older source files would restore the old one-scene loop.

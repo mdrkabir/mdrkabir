@@ -12,19 +12,19 @@
     {
       "title": "Large language models",
       "subtitle": [
-        "Post-training · Interpretability"
+        "Post-training \u00b7 Interpretability"
       ]
     },
     {
       "title": "Reinforcement learning",
       "subtitle": [
-        "Policy optimization · Reward shaping"
+        "Policy optimization \u00b7 Reward shaping"
       ]
     },
     {
       "title": "Probabilistic modeling",
       "subtitle": [
-        "Hierarchical models · MCMC"
+        "Hierarchical models \u00b7 MCMC"
       ]
     }
   ],
@@ -32,7 +32,7 @@
     {
       "id": "01",
       "title": "LLM behavior & safety",
-      "venue": "PREPRINT · 2026",
+      "venue": "PREPRINT \u00b7 2026",
       "description": "Comparing SFT, RLVR, and abliteration to understand their effects on harmful compliance, model capabilities, and safety judgments.",
       "paper": "https://arxiv.org/abs/2604.18510",
       "code": null,
@@ -45,7 +45,7 @@
     {
       "id": "02",
       "title": "Reinforcement learning with memory",
-      "venue": "AAAI · 2025",
+      "venue": "AAAI \u00b7 2025",
       "description": "Integrating time-scale invariant memory into deep reinforcement-learning agents for temporal decision-making tasks.",
       "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/32124",
       "code": "https://github.com/cogneuroai/RL-with-scale-invariant-memory",
@@ -57,7 +57,7 @@
     {
       "id": "03",
       "title": "Bayesian model of path integration",
-      "venue": "SCIENCE ADVANCES · 2025",
+      "venue": "SCIENCE ADVANCES \u00b7 2025",
       "description": "Using hierarchical Bayesian models to study individual and group differences in path-integration errors.",
       "paper": "https://doi.org/10.1126/sciadv.adw6404",
       "code": "https://github.com/cogneuroai/Bayesian-hierarchical-model-for-PI",
@@ -67,5 +67,63 @@
       ]
     }
   ],
-  "bio": "I am a **Computer Science Ph.D. student at Indiana University Bloomington**, working on LLM post-training and evaluation, reinforcement learning, and Bayesian modeling. I study how learning methods and internal representations shape model behavior, reliability, and interpretability."
+  "bio": "I am a **Computer Science Ph.D. student at Indiana University Bloomington**, working on LLM post-training and evaluation, reinforcement learning, and Bayesian modeling. I study how learning methods and internal representations shape model behavior, reliability, and interpretability.",
+  "console_scenes": [
+    {
+      "id": "identity",
+      "command": "whoami",
+      "lines": [
+        "Md Rysul Kabir",
+        "Computer Science Ph.D. student",
+        "Indiana University Bloomington"
+      ],
+      "colors": [
+        "text",
+        "muted",
+        "muted"
+      ],
+      "hold_ms": 3200
+    },
+    {
+      "id": "research",
+      "command": "cat research.txt",
+      "lines": [
+        "LLM post-training & interpretability",
+        "Reinforcement learning",
+        "Bayesian modeling & inference"
+      ],
+      "colors": [
+        "purple",
+        "cyan",
+        "amber"
+      ],
+      "hold_ms": 3200
+    },
+    {
+      "id": "selected-work",
+      "command": "ls selected-work/",
+      "lines": [
+        "01  llm-behavior-and-safety",
+        "02  time-scale-invariant-memory",
+        "03  bayesian-path-integration"
+      ],
+      "colors": [
+        "purple",
+        "cyan",
+        "amber"
+      ],
+      "hold_ms": 3200
+    }
+  ],
+  "console_static_scene": "research",
+  "header_title": "mdrkabir/console",
+  "console_prompt": "mdrkabir@github:~$ ",
+  "header_name": "Md Rysul Kabir",
+  "console_mode": "single-scene",
+  "research_lines": [
+    "LLM: Post-training \u00b7 Interpretability",
+    "RL: Policy optimization \u00b7 Reward shaping",
+    "Probabilistic modeling: Hierarchical models \u00b7 MCMC"
+  ],
+  "footer": "learning methods \u2192 model behavior"
 }
