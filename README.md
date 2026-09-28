@@ -1,6 +1,6 @@
 ### Hi! 👋
 
-I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm interested in how models learn, remember, and make decisions, with a focus on **LLM post-training and interpretability**, **reinforcement learning**, and **Bayesian modeling**. I train and evaluate language models, build agents with temporal memory, and use probabilistic models to better understand cognitive and behavioral data.
+I'm a **Computer Science Ph.D. student at Indiana University Bloomington**, interested in how models learn, behave, and make decisions. My work spans **LLM post-training and interpretability**, **reinforcement learning**, and **Bayesian modeling of cognitive and behavioral data**.
 
 ### Research 🧠
 
@@ -19,7 +19,7 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
 
 ### Tech Stack 🛠️
 
-#### LLM & ML/DL
+#### Deep learning & LLMs
 
 <p>
   <a href="https://pytorch.org/" title="PyTorch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/pytorch-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/pytorch-light.png"><img src="assets/stack/pytorch-light.png" alt="PyTorch" width="80" height="66"></picture></a>
