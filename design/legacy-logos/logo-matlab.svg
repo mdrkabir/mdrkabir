@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<defs><linearGradient id="a" x1="0" y1="80" x2="74" y2="63" gradientUnits="userSpaceOnUse"><stop stop-color="#0b467e"/><stop offset=".52" stop-color="#2196c7"/><stop offset="1" stop-color="#69c9e6"/></linearGradient><linearGradient id="b" x1="38" y1="111" x2="100" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#fbb429"/><stop offset=".46" stop-color="#ed641c"/><stop offset=".8" stop-color="#d42925"/><stop offset="1" stop-color="#8b1321"/></linearGradient><linearGradient id="c" x1="73" y1="71" x2="98" y2="63" gradientUnits="userSpaceOnUse"><stop stop-color="#ed8526"/><stop offset=".45" stop-color="#ffe589"/><stop offset="1" stop-color="#cc2d23"/></linearGradient></defs>
+<path fill="url(#a)" d="M5 88L32 76L48 47L63 57C74 46 75 27 84 10C77 44 72 59 65 77L49 103L35 96L28 84L17 86Z"/>
+<path fill="url(#b)" d="M28 84C51 87 72 48 82 12C86 -2 90 15 94 37C101 67 113 98 124 115L95 121C88 94 80 72 73 83C65 96 53 107 40 107L30 115L24 99Z"/>
+<path fill="url(#c)" d="M79 60C82 40 82 20 85 10C89 1 91 22 94 37C97 55 103 71 107 82C102 88 95 103 95 121C88 94 82 73 74 82Z"/>
+</svg>

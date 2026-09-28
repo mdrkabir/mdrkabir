@@ -1,0 +1,22 @@
+[
+  {
+    "theme": "light",
+    "size": [
+      2280,
+      1008
+    ],
+    "frames": 23,
+    "duration_ms": 9390,
+    "bytes": 131920
+  },
+  {
+    "theme": "dark",
+    "size": [
+      2280,
+      1008
+    ],
+    "frames": 23,
+    "duration_ms": 9390,
+    "bytes": 132202
+  }
+]

@@ -1,130 +1,93 @@
-<p align="center"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/console-dark.gif">
-  <source media="(prefers-color-scheme: light)" srcset="assets/console-light.gif">
-  <img src="assets/console-light.gif" alt="Md Rysul Kabir research console" width="700">
-</picture></p>
+<!-- Complete profile. Upload README.md and the full assets/profile-v2/ directory. -->
+<!-- Text changes: edit the native paragraphs below. Artwork: design/profile.json + tools/build_profile.py. -->
 
-<p align="center">
-  <a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/nav-scholar-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/nav-scholar-light.svg">
-    <img src="assets/nav-scholar-light.svg" alt="Google Scholar" width="126">
-  </picture></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/mdrysulkabir/"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/nav-linkedin-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/nav-linkedin-light.svg">
-    <img src="assets/nav-linkedin-light.svg" alt="LinkedIn" width="100">
-  </picture></a>
-  &nbsp;
-  <a href="https://github.com/mdrkabir?tab=repositories"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/nav-repositories-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/nav-repositories-light.svg">
-    <img src="assets/nav-repositories-light.svg" alt="Repositories" width="124">
-  </picture></a>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/console-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/console-light.gif"><img src="assets/profile-v2/console-light.gif" alt="Md Rysul Kabir. Computer Science Ph.D. student, Indiana University Bloomington. Research: LLM post-training and interpretability; reinforcement learning; hierarchical probabilistic models and MCMC." width="720"></picture></p>
+
+<p><a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-scholar-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-scholar-light.svg"><img src="assets/profile-v2/nav-scholar-light.svg" alt="Google Scholar" width="137"></picture></a> <a href="https://www.linkedin.com/in/mdrysulkabir/" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-linkedin-light.svg"><img src="assets/profile-v2/nav-linkedin-light.svg" alt="LinkedIn" width="108"></picture></a> <a href="https://github.com/mdrkabir?tab=repositories" title="Repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-repositories-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-repositories-light.svg"><img src="assets/profile-v2/nav-repositories-light.svg" alt="Repositories" width="136"></picture></a> </p>
+
+I am a **Computer Science Ph.D. student at Indiana University Bloomington**, working on LLM post-training and evaluation, reinforcement learning, and Bayesian modeling. I study how learning methods and internal representations shape model behavior, reliability, and interpretability.
+
+## research.registry
+
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-01-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-01-light.svg"><img src="assets/profile-v2/index-01-light.svg" alt="Project 01" width="30" height="20"></picture> LLM behavior & safety
+
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/meta-01-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/meta-01-light.svg"><img src="assets/profile-v2/meta-01-light.svg" alt="PREPRINT · 2026" width="300" height="28"></picture></p>
+
+Comparing SFT, RLVR, and abliteration to understand their effects on harmful compliance, model capabilities, and safety judgments.
+
+**[Paper ↗](https://arxiv.org/abs/2604.18510)** &nbsp; · &nbsp; `LLM post-training` · `Interpretability` · `Evaluation`
+
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-02-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-02-light.svg"><img src="assets/profile-v2/index-02-light.svg" alt="Project 02" width="30" height="20"></picture> Reinforcement learning with memory
+
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/meta-02-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/meta-02-light.svg"><img src="assets/profile-v2/meta-02-light.svg" alt="AAAI · 2025" width="300" height="28"></picture></p>
+
+Integrating time-scale invariant memory into deep reinforcement-learning agents for temporal decision-making tasks.
+
+**[Paper ↗](https://ojs.aaai.org/index.php/AAAI/article/view/32124)** &nbsp; · &nbsp; **[Code ↗](https://github.com/cogneuroai/RL-with-scale-invariant-memory)** &nbsp; · &nbsp; `Reinforcement learning` · `Memory`
+
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-03-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-03-light.svg"><img src="assets/profile-v2/index-03-light.svg" alt="Project 03" width="30" height="20"></picture> Bayesian models of path integration
+
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/meta-03-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/meta-03-light.svg"><img src="assets/profile-v2/meta-03-light.svg" alt="SCIENCE ADVANCES · 2025" width="300" height="28"></picture></p>
+
+Using hierarchical Bayesian models to study individual and group differences in path-integration errors.
+
+**[Paper ↗](https://doi.org/10.1126/sciadv.adw6404)** &nbsp; · &nbsp; **[Code ↗](https://github.com/cogneuroai/Bayesian-hierarchical-model-for-PI)** &nbsp; · &nbsp; `Bayesian inference` · `Cognitive modeling`
+
+## toolchain
+
+<!-- Fixed-size transparent logo/caption assets wrap without HTML tables or ruby annotations. -->
+
+#### LLM & deep learning
+
+<p>
+<a href="https://pytorch.org/" title="PyTorch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-pytorch-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-pytorch-light.png"><img src="assets/profile-v2/tool-pytorch-light.png" alt="PyTorch" width="84" height="76"></picture></a>
+<a href="https://huggingface.co/docs/transformers/" title="Transformers"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-transformers-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-transformers-light.png"><img src="assets/profile-v2/tool-transformers-light.png" alt="Transformers" width="84" height="76"></picture></a>
+<a href="https://github.com/verl-project/verl" title="verl"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-verl-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-verl-light.png"><img src="assets/profile-v2/tool-verl-light.png" alt="verl" width="84" height="76"></picture></a>
+<a href="https://github.com/vllm-project/vllm" title="vLLM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-vllm-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-vllm-light.png"><img src="assets/profile-v2/tool-vllm-light.png" alt="vLLM" width="84" height="76"></picture></a>
+<a href="https://www.tensorflow.org/" title="TensorFlow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-tensorflow-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-tensorflow-light.png"><img src="assets/profile-v2/tool-tensorflow-light.png" alt="TensorFlow" width="84" height="76"></picture></a>
 </p>
 
-I am a **Computer Science Ph.D. student at Indiana University Bloomington**, working on **LLM post-training and evaluation, reinforcement learning, and Bayesian modeling**. My research focuses on how learning methods and internal representations shape model behavior, reliability, and interpretability.
+#### Bayesian modeling & data science
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heading-research-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/heading-research-light.png">
-  <img src="assets/heading-research-light.png" alt="research.registry" width="940">
-</picture>
+<p>
+<a href="https://num.pyro.ai/" title="NumPyro"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-numpyro-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-numpyro-light.png"><img src="assets/profile-v2/tool-numpyro-light.png" alt="NumPyro" width="84" height="76"></picture></a>
+<a href="https://docs.jax.dev/" title="JAX"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-jax-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-jax-light.png"><img src="assets/profile-v2/tool-jax-light.png" alt="JAX" width="84" height="76"></picture></a>
+<a href="https://scikit-learn.org/" title="scikit-learn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-scikit-learn-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-scikit-learn-light.png"><img src="assets/profile-v2/tool-scikit-learn-light.png" alt="scikit-learn" width="84" height="76"></picture></a>
+<a href="https://numpy.org/" title="NumPy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-numpy-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-numpy-light.png"><img src="assets/profile-v2/tool-numpy-light.png" alt="NumPy" width="84" height="76"></picture></a>
+<a href="https://pandas.pydata.org/" title="pandas"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-pandas-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-pandas-light.png"><img src="assets/profile-v2/tool-pandas-light.png" alt="pandas" width="84" height="76"></picture></a>
+<a href="https://matplotlib.org/" title="Matplotlib"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-matplotlib-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-matplotlib-light.png"><img src="assets/profile-v2/tool-matplotlib-light.png" alt="Matplotlib" width="84" height="76"></picture></a>
+<a href="https://seaborn.pydata.org/" title="Seaborn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-seaborn-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-seaborn-light.png"><img src="assets/profile-v2/tool-seaborn-light.png" alt="Seaborn" width="84" height="76"></picture></a>
+</p>
 
-<sub>Ongoing research at the intersection of learning, reasoning, and uncertainty.</sub>
+#### Compute & development
 
-<table>
-  <tr>
-    <td align="center" valign="top" width="33%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/card-01-dark.png">
-        <source media="(prefers-color-scheme: light)" srcset="assets/card-01-light.png">
-        <img src="assets/card-01-light.png" alt="LLM behavior and harmful compliance study" width="300">
-      </picture><br>
-      <a href="https://arxiv.org/abs/2604.18510"><b>Paper ↗</b></a>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/card-02-dark.png">
-        <source media="(prefers-color-scheme: light)" srcset="assets/card-02-light.png">
-        <img src="assets/card-02-light.png" alt="Reinforcement learning with time-scale invariant memory" width="300">
-      </picture><br>
-      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32124"><b>Paper ↗</b></a> &nbsp;·&nbsp; <a href="https://github.com/cogneuroai/RL-with-scale-invariant-memory"><b>Code ↗</b></a>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/card-03-dark.png">
-        <source media="(prefers-color-scheme: light)" srcset="assets/card-03-light.png">
-        <img src="assets/card-03-light.png" alt="Bayesian modeling of path integration" width="300">
-      </picture><br>
-      <a href="https://doi.org/10.1126/sciadv.adw6404"><b>Paper ↗</b></a> &nbsp;·&nbsp; <a href="https://github.com/cogneuroai/Bayesian-hierarchical-model-for-PI"><b>Code ↗</b></a>
-    </td>
-  </tr>
-</table>
+<p>
+<a href="https://slurm.schedmd.com/" title="Slurm / HPC"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-slurm-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-slurm-light.png"><img src="assets/profile-v2/tool-slurm-light.png" alt="Slurm / HPC" width="84" height="76"></picture></a>
+<a href="https://www.kernel.org/" title="Linux"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-linux-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-linux-light.png"><img src="assets/profile-v2/tool-linux-light.png" alt="Linux" width="84" height="76"></picture></a>
+<a href="https://www.gnu.org/software/bash/" title="Bash / Zsh"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-shell-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-shell-light.png"><img src="assets/profile-v2/tool-shell-light.png" alt="Bash / Zsh" width="84" height="76"></picture></a>
+<a href="https://www.docker.com/" title="Docker"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-docker-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-docker-light.png"><img src="assets/profile-v2/tool-docker-light.png" alt="Docker" width="84" height="76"></picture></a>
+<a href="https://cloud.google.com/compute" title="Google Cloud"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-gcp-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-gcp-light.png"><img src="assets/profile-v2/tool-gcp-light.png" alt="Google Cloud" width="84" height="76"></picture></a>
+<a href="https://git-scm.com/" title="Git"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-git-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-git-light.png"><img src="assets/profile-v2/tool-git-light.png" alt="Git" width="84" height="76"></picture></a>
+</p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/heading-tools-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/heading-tools-light.png">
-  <img src="assets/heading-tools-light.png" alt="toolchain.stack" width="940">
-</picture>
+#### Languages
 
-<sub>Core libraries, systems, and languages I regularly use.</sub>
+<p>
+<a href="https://www.python.org/" title="Python"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-python-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-python-light.png"><img src="assets/profile-v2/tool-python-light.png" alt="Python" width="84" height="76"></picture></a>
+<a href="https://isocpp.org/" title="C++"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-cpp-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-cpp-light.png"><img src="assets/profile-v2/tool-cpp-light.png" alt="C++" width="84" height="76"></picture></a>
+<a href="https://www.iso.org/standard/82075.html" title="C"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-c-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-c-light.png"><img src="assets/profile-v2/tool-c-light.png" alt="C" width="84" height="76"></picture></a>
+<a href="https://www.postgresql.org/docs/current/tutorial-sql.html" title="SQL"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-sql-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-sql-light.png"><img src="assets/profile-v2/tool-sql-light.png" alt="SQL" width="84" height="76"></picture></a>
+<a href="https://www.r-project.org/" title="R"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-r-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-r-light.png"><img src="assets/profile-v2/tool-r-light.png" alt="R" width="84" height="76"></picture></a>
+<a href="https://www.mathworks.com/products/matlab.html" title="MATLAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-matlab-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-matlab-light.png"><img src="assets/profile-v2/tool-matlab-light.png" alt="MATLAB" width="84" height="76"></picture></a>
+</p>
 
-### LLM & Deep Learning
-<table>
-<tr>
-<td align="center"><a href="https://pytorch.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-pytorch-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-pytorch-light.svg"><img src="assets/logo-pytorch-light.svg" alt="PyTorch" width="42"></picture><br><sub>PyTorch</sub></a></td>
-<td align="center"><a href="https://huggingface.co/docs/transformers/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-transformers-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-transformers-light.svg"><img src="assets/logo-transformers-light.svg" alt="Transformers" width="42"></picture><br><sub>Transformers</sub></a></td>
-<td align="center"><a href="https://github.com/verl-project/verl"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-verl-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-verl-light.svg"><img src="assets/logo-verl-light.svg" alt="verl" width="42"></picture><br><sub>verl</sub></a></td>
-<td align="center"><a href="https://github.com/vllm-project/vllm"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-vllm-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-vllm-light.svg"><img src="assets/logo-vllm-light.svg" alt="vLLM" width="68"></picture><br><sub>vLLM</sub></a></td>
-<td align="center"><a href="https://www.tensorflow.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-tensorflow-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-tensorflow-light.svg"><img src="assets/logo-tensorflow-light.svg" alt="TensorFlow" width="42"></picture><br><sub>TensorFlow</sub></a></td>
-</tr>
-</table>
+#### Databases
 
-### Bayesian Modeling & Data Science
-<table>
-<tr>
-<td align="center"><a href="https://num.pyro.ai/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-numpyro-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-numpyro-light.svg"><img src="assets/logo-numpyro-light.svg" alt="NumPyro" width="74"></picture><br><sub>NumPyro</sub></a></td>
-<td align="center"><a href="https://docs.jax.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-jax-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-jax-light.svg"><img src="assets/logo-jax-light.svg" alt="JAX" width="52"></picture><br><sub>JAX</sub></a></td>
-<td align="center"><a href="https://scikit-learn.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-scikit-learn-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-scikit-learn-light.svg"><img src="assets/logo-scikit-learn-light.svg" alt="scikit-learn" width="42"></picture><br><sub>scikit-learn</sub></a></td>
-<td align="center"><a href="https://numpy.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-numpy-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-numpy-light.svg"><img src="assets/logo-numpy-light.svg" alt="NumPy" width="42"></picture><br><sub>NumPy</sub></a></td>
-<td align="center"><a href="https://pandas.pydata.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-pandas-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-pandas-light.svg"><img src="assets/logo-pandas-light.svg" alt="Pandas" width="42"></picture><br><sub>Pandas</sub></a></td>
-<td align="center"><a href="https://matplotlib.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-matplotlib-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-matplotlib-light.svg"><img src="assets/logo-matplotlib-light.svg" alt="Matplotlib" width="42"></picture><br><sub>Matplotlib</sub></a></td>
-<td align="center"><a href="https://seaborn.pydata.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-seaborn-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-seaborn-light.svg"><img src="assets/logo-seaborn-light.svg" alt="Seaborn" width="42"></picture><br><sub>Seaborn</sub></a></td>
-</tr>
-</table>
+<p>
+<a href="https://www.postgresql.org/" title="PostgreSQL"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-postgresql-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-postgresql-light.png"><img src="assets/profile-v2/tool-postgresql-light.png" alt="PostgreSQL" width="84" height="76"></picture></a>
+<a href="https://www.mysql.com/" title="MySQL"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/tool-mysql-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/tool-mysql-light.png"><img src="assets/profile-v2/tool-mysql-light.png" alt="MySQL" width="84" height="76"></picture></a>
+</p>
 
-### Compute & Development
-<table>
-<tr>
-<td align="center"><a href="https://slurm.schedmd.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-slurm-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-slurm-light.svg"><img src="assets/logo-slurm-light.svg" alt="Slurm / HPC" width="42"></picture><br><sub>Slurm / HPC</sub></a></td>
-<td align="center"><a href="https://www.kernel.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-linux-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-linux-light.svg"><img src="assets/logo-linux-light.svg" alt="Linux" width="42"></picture><br><sub>Linux</sub></a></td>
-<td align="center"><a href="https://www.gnu.org/software/bash/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-shell-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-shell-light.svg"><img src="assets/logo-shell-light.svg" alt="Bash / Zsh" width="42"></picture><br><sub>Bash / Zsh</sub></a></td>
-<td align="center"><a href="https://www.docker.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-docker-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-docker-light.svg"><img src="assets/logo-docker-light.svg" alt="Docker" width="42"></picture><br><sub>Docker</sub></a></td>
-<td align="center"><a href="https://cloud.google.com/compute"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-gcp-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-gcp-light.svg"><img src="assets/logo-gcp-light.svg" alt="GCP" width="42"></picture><br><sub>GCP</sub></a></td>
-<td align="center"><a href="https://git-scm.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-git-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-git-light.svg"><img src="assets/logo-git-light.svg" alt="Git" width="42"></picture><br><sub>Git</sub></a></td>
-</tr>
-</table>
+---
 
-### Languages
-<table>
-<tr>
-<td align="center"><a href="https://www.python.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-python-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-python-light.svg"><img src="assets/logo-python-light.svg" alt="Python" width="42"></picture><br><sub>Python</sub></a></td>
-<td align="center"><a href="https://isocpp.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-cpp-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-cpp-light.svg"><img src="assets/logo-cpp-light.svg" alt="C++" width="42"></picture><br><sub>C++</sub></a></td>
-<td align="center"><a href="https://www.iso.org/standard/82075.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-c-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-c-light.svg"><img src="assets/logo-c-light.svg" alt="C" width="42"></picture><br><sub>C</sub></a></td>
-<td align="center"><a href="https://www.postgresql.org/docs/current/tutorial-sql.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-sql-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-sql-light.svg"><img src="assets/logo-sql-light.svg" alt="SQL" width="42"></picture><br><sub>SQL</sub></a></td>
-<td align="center"><a href="https://www.r-project.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-r-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-r-light.svg"><img src="assets/logo-r-light.svg" alt="R" width="42"></picture><br><sub>R</sub></a></td>
-<td align="center"><a href="https://www.mathworks.com/products/matlab.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-matlab-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-matlab-light.svg"><img src="assets/logo-matlab-light.svg" alt="MATLAB" width="68"></picture><br><sub>MATLAB</sub></a></td>
-</tr>
-</table>
-
-### Databases
-<table>
-<tr>
-<td align="center"><a href="https://www.postgresql.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-postgresql-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-postgresql-light.svg"><img src="assets/logo-postgresql-light.svg" alt="PostgreSQL" width="42"></picture><br><sub>PostgreSQL</sub></a></td>
-<td align="center"><a href="https://www.mysql.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-mysql-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/logo-mysql-light.svg"><img src="assets/logo-mysql-light.svg" alt="MySQL" width="42"></picture><br><sub>MySQL</sub></a></td>
-</tr>
-</table>
-
-`focus` → LLM post-training · model behavior · evaluation
+<sub>Research focus: LLM post-training · model behavior · evaluation</sub>

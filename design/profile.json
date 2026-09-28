@@ -1,0 +1,73 @@
+{
+  "display_width": 720,
+  "name": "Md Rysul Kabir",
+  "role": "Computer Science Ph.D. student",
+  "institution": "Indiana University Bloomington",
+  "terminal": [
+    "LLM post-training & interpretability",
+    "Reinforcement learning",
+    "Bayesian modeling & inference"
+  ],
+  "focus": [
+    {
+      "title": "LLM",
+      "subtitle": [
+        "Post-training &",
+        "interpretability"
+      ]
+    },
+    {
+      "title": "Reinforcement learning",
+      "subtitle": [
+        "Policy optimization &",
+        "reward shaping"
+      ]
+    },
+    {
+      "title": "Probabilistic modeling",
+      "subtitle": [
+        "Hierarchical models · MCMC"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "01",
+      "title": "LLM behavior & safety",
+      "venue": "PREPRINT · 2026",
+      "description": "Comparing SFT, RLVR, and abliteration to understand their effects on harmful compliance, model capabilities, and safety judgments.",
+      "paper": "https://arxiv.org/abs/2604.18510",
+      "code": null,
+      "tags": [
+        "LLM post-training",
+        "Interpretability",
+        "Evaluation"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Reinforcement learning with memory",
+      "venue": "AAAI · 2025",
+      "description": "Integrating time-scale invariant memory into deep reinforcement-learning agents for temporal decision-making tasks.",
+      "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/32124",
+      "code": "https://github.com/cogneuroai/RL-with-scale-invariant-memory",
+      "tags": [
+        "Reinforcement learning",
+        "Memory"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Bayesian models of path integration",
+      "venue": "SCIENCE ADVANCES · 2025",
+      "description": "Using hierarchical Bayesian models to study individual and group differences in path-integration errors.",
+      "paper": "https://doi.org/10.1126/sciadv.adw6404",
+      "code": "https://github.com/cogneuroai/Bayesian-hierarchical-model-for-PI",
+      "tags": [
+        "Bayesian inference",
+        "Cognitive modeling"
+      ]
+    }
+  ],
+  "bio": "I am a **Computer Science Ph.D. student at Indiana University Bloomington**, working on LLM post-training and evaluation, reinforcement learning, and Bayesian modeling. I study how learning methods and internal representations shape model behavior, reliability, and interpretability."
+}
