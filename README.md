@@ -3,13 +3,13 @@
 
 <p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/console-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/console-light.gif"><img src="assets/profile-v2/console-light.gif" alt="Md Rysul Kabir. Computer Science Ph.D. student, Indiana University Bloomington. Research: LLM post-training and interpretability; reinforcement learning; hierarchical probabilistic models and MCMC." width="720"></picture></p>
 
-<p><a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-scholar-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-scholar-light.svg"><img src="assets/profile-v2/nav-scholar-light.svg" alt="Google Scholar" width="137"></picture></a> <a href="https://www.linkedin.com/in/mdrysulkabir/" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-linkedin-light.svg"><img src="assets/profile-v2/nav-linkedin-light.svg" alt="LinkedIn" width="108"></picture></a> <a href="https://github.com/mdrkabir?tab=repositories" title="Repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-repositories-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-repositories-light.svg"><img src="assets/profile-v2/nav-repositories-light.svg" alt="Repositories" width="136"></picture></a> </p>
+<p><a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en" title="Google Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-scholar-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-scholar-light.svg"><img src="assets/profile-v2/nav-scholar-light.svg" alt="Google Scholar" width="220"></picture></a> <a href="https://www.linkedin.com/in/mdrysulkabir/" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-linkedin-light.svg"><img src="assets/profile-v2/nav-linkedin-light.svg" alt="LinkedIn" width="190"></picture></a> <a href="https://github.com/mdrkabir?tab=repositories" title="Repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/nav-repositories-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/nav-repositories-light.svg"><img src="assets/profile-v2/nav-repositories-light.svg" alt="Repositories" width="220"></picture></a> </p>
 
 I am a **Computer Science Ph.D. student at Indiana University Bloomington**, working on LLM post-training and evaluation, reinforcement learning, and Bayesian modeling. I study how learning methods and internal representations shape model behavior, reliability, and interpretability.
 
 ## research.registry
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-01-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-01-light.svg"><img src="assets/profile-v2/index-01-light.svg" alt="Project 01" width="30" height="20"></picture> LLM behavior & safety
+<table><tr><td width="34" valign="middle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-01-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-01-light.svg"><img src="assets/profile-v2/index-01-light.svg" alt="Project 01" width="30" height="20"></picture></td><td valign="middle"><h3>LLM behavior &amp; safety</h3></td></tr></table>
 
 <p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/meta-01-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/meta-01-light.svg"><img src="assets/profile-v2/meta-01-light.svg" alt="PREPRINT · 2026" width="300" height="28"></picture></p>
 
@@ -17,7 +17,7 @@ Comparing SFT, RLVR, and abliteration to understand their effects on harmful com
 
 **[Paper ↗](https://arxiv.org/abs/2604.18510)** &nbsp; · &nbsp; `LLM post-training` · `Interpretability` · `Evaluation`
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-02-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-02-light.svg"><img src="assets/profile-v2/index-02-light.svg" alt="Project 02" width="30" height="20"></picture> Reinforcement learning with memory
+<table><tr><td width="34" valign="middle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-02-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-02-light.svg"><img src="assets/profile-v2/index-02-light.svg" alt="Project 02" width="30" height="20"></picture></td><td valign="middle"><h3>Reinforcement learning with memory</h3></td></tr></table>
 
 <p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/meta-02-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/meta-02-light.svg"><img src="assets/profile-v2/meta-02-light.svg" alt="AAAI · 2025" width="300" height="28"></picture></p>
 
@@ -25,7 +25,7 @@ Integrating time-scale invariant memory into deep reinforcement-learning agents 
 
 **[Paper ↗](https://ojs.aaai.org/index.php/AAAI/article/view/32124)** &nbsp; · &nbsp; **[Code ↗](https://github.com/cogneuroai/RL-with-scale-invariant-memory)** &nbsp; · &nbsp; `Reinforcement learning` · `Memory`
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-03-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-03-light.svg"><img src="assets/profile-v2/index-03-light.svg" alt="Project 03" width="30" height="20"></picture> Bayesian models of path integration
+<table><tr><td width="34" valign="middle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/index-03-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/index-03-light.svg"><img src="assets/profile-v2/index-03-light.svg" alt="Project 03" width="30" height="20"></picture></td><td valign="middle"><h3>Bayesian model of path integration</h3></td></tr></table>
 
 <p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile-v2/meta-03-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/profile-v2/meta-03-light.svg"><img src="assets/profile-v2/meta-03-light.svg" alt="SCIENCE ADVANCES · 2025" width="300" height="28"></picture></p>
 
