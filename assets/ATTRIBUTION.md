@@ -32,7 +32,7 @@ These are not all unmodified official logos:
 ## Link buttons
 
 The Google Scholar and LinkedIn marks in `links/` use Font Awesome Free 6.7.2
-brand icons, scaled and recolored white. The icons are licensed under CC BY 4.0;
+brand icons, scaled and recolored to match the button text. The icons are licensed under CC BY 4.0;
 original attribution comments are retained in each SVG, with the bundled notice
 in [licenses/FONT-AWESOME.txt](licenses/FONT-AWESOME.txt).
 

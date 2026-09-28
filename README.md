@@ -12,9 +12,9 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
 ### Links 🔗
 
 <p>
-  <a href="https://mdrkabir.github.io/homepage/"><img src="assets/links/website.svg" alt="Personal website" width="164" height="36"></a> &nbsp;
-  <a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en"><img src="assets/links/scholar.svg" alt="Google Scholar" width="164" height="36"></a> &nbsp;
-  <a href="https://www.linkedin.com/in/mdrysulkabir/"><img src="assets/links/linkedin.svg" alt="LinkedIn" width="164" height="36"></a>
+  <a href="https://mdrkabir.github.io/homepage/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/website-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/links/website.svg"><img src="assets/links/website.svg" alt="Personal website" width="164" height="36"></picture></a> &nbsp;
+  <a href="https://scholar.google.com/citations?user=-BT9-3AAAAAJ&amp;hl=en"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/scholar-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/links/scholar.svg"><img src="assets/links/scholar.svg" alt="Google Scholar" width="164" height="36"></picture></a> &nbsp;
+  <a href="https://www.linkedin.com/in/mdrysulkabir/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/links/linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/links/linkedin.svg"><img src="assets/links/linkedin.svg" alt="LinkedIn" width="164" height="36"></picture></a>
 </p>
 
 ### Tech Stack 🛠️
