@@ -1,5 +1,5 @@
 {
-  "display_width": 720,
+  "display_width": 640,
   "name": "Md Rysul Kabir",
   "role": "Computer Science Ph.D. student",
   "institution": "Indiana University Bloomington",
@@ -10,17 +10,15 @@
   ],
   "focus": [
     {
-      "title": "LLM",
+      "title": "Large language models",
       "subtitle": [
-        "Post-training &",
-        "interpretability"
+        "Post-training · Interpretability"
       ]
     },
     {
       "title": "Reinforcement learning",
       "subtitle": [
-        "Policy optimization &",
-        "reward shaping"
+        "Policy optimization · Reward shaping"
       ]
     },
     {
@@ -58,7 +56,7 @@
     },
     {
       "id": "03",
-      "title": "Bayesian models of path integration",
+      "title": "Bayesian model of path integration",
       "venue": "SCIENCE ADVANCES · 2025",
       "description": "Using hierarchical Bayesian models to study individual and group differences in path-integration errors.",
       "paper": "https://doi.org/10.1126/sciadv.adw6404",

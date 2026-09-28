@@ -1,27 +1,30 @@
-# Editing this version
+# Editing the profile
 
-## Ordinary writing changes
+## Ordinary wording and links
 
-Edit `README.md` directly for the bio, project titles, descriptions, links,
-keywords, section names, or their order. Project titles are native Markdown text.
-There is no need to rebuild an image for a project-title change.
+Edit the root `README.md`. The biography, numbered research headings, descriptions,
+project links, and toolchain section headings are ordinary Markdown/HTML text.
+The project headings use the same native font and baseline for their numbers and titles.
+There are no layout tables or image-based project titles.
 
-## Animation and logo-label changes
+## Artwork text
 
-The exact artwork source and renderer are included:
+The animated console and research-focus panel are generated graphics. Change the relevant
+strings in `design/profile.json`, then rebuild them. The required third subtitle is:
 
-- `design/profile.json`: name, affiliation, terminal lines, research-focus text,
-  project metadata, and display width.
-- `design/toolchain.json`: toolchain sections, names beneath the logos, and URLs.
-- `design/legacy-logos/`: individual logo/symbol artwork used by the renderer.
-- `tools/build_profile.py`: creates high-resolution animation, small metadata
-  graphics, and evenly sized transparent logo/caption images.
+```
+Hierarchical models · MCMC
+```
 
-Install the optional Python dependencies from `tools/requirements.txt` to
-regenerate. The renderer uses locally installed Inter/DejaVu fonts where
-available, with a system Arial fallback. No font files are distributed here.
-Set `PROFILE_FONT_DIR` to a directory containing your own installed Inter and
-DejaVuSansMono fonts when needed. Different fallback fonts can change the artwork.
+A pre-rendered static alternative is included as `README-static.md`. Use that file as
+`README.md` to disable the console animation.
+
+## Optional rebuilding
+
+No rebuilding is needed to publish. For later graphic changes, install the packages in
+`tools/requirements.txt`. Fonts are read from your own computer; no font files are bundled.
+The builder prefers Inter and DejaVu Sans Mono. A system Arial fallback is supported.
+`PROFILE_FONT_DIR` can point to your local Inter/DejaVu font directory.
 
 ```
 python3 -m pip install -r tools/requirements.txt
@@ -29,20 +32,21 @@ python3 tools/build_profile.py --assets-only
 python3 tools/validate_profile.py
 ```
 
-`--assets-only` preserves your manually edited README. A full run without it
-recreates both READMEs from the configuration and can overwrite manual wording
-changes; save a copy before doing a full rebuild.
+`--assets-only` preserves hand-edited README text. To regenerate the README from the
+configuration as well, omit that flag; back up your text first.
 
-To change only the toolchain or project graphics without rebuilding the GIF:
+Toolchain caption text and group membership are in `design/toolchain.json`.
+The supplied tool marks retain the previous kit's artwork. See `ICON-SOURCES.md` for
+reconstructed and representative marks; do not describe them all as official artwork.
 
-```
-python3 tools/build_profile.py --assets-only --skip-animation
-```
+## Layout
 
-The artwork uses actual 3x pixel dimensions; DPI metadata is not the mechanism.
-The README's explicit display width keeps the high-resolution GIF compact.
-The captions are drawn into individual transparent images (not a screenshot of
-the whole page), keeping them centered without underlines, tables, or ruby markup.
+Each header panel has a 312 × 250 display footprint. Together they take approximately
+629 pixels including ordinary inline spacing; they wrap to separate rows on narrow
+screens. There are no mobile-specific image sources to accidentally stretch on desktop.
+The animation is rendered at 936 × 750 pixels (3× its display size). The focus panel is
+vector artwork. Navigation is 30 pixels high. Tool tiles have an 80 × 66 display footprint.
 
-The decorative project motifs are illustrations, not experiment-result plots.
-See ICON-SOURCES.md for the provenance and limitations of individual marks.
+The README does not depend on the CSS or JavaScript in the browser preview. Preview files
+are conveniences, not deployment requirements. After changing README wording, regenerate
+the preview with `python3 tools/make_preview.py` (requires markdown-it-py).

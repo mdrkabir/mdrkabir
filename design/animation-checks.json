@@ -1,22 +1,30 @@
-[
-  {
-    "theme": "light",
-    "size": [
-      2280,
-      1008
+{
+  "light": {
+    "raster_pixels": [
+      936,
+      750
     ],
-    "frames": 23,
-    "duration_ms": 9390,
-    "bytes": 131920
+    "display_pixels": [
+      312,
+      250
+    ],
+    "frames": 22,
+    "loop_ms": 8580,
+    "first_frame_ms": 5500,
+    "bytes": 78289
   },
-  {
-    "theme": "dark",
-    "size": [
-      2280,
-      1008
+  "dark": {
+    "raster_pixels": [
+      936,
+      750
     ],
-    "frames": 23,
-    "duration_ms": 9390,
-    "bytes": 132202
+    "display_pixels": [
+      312,
+      250
+    ],
+    "frames": 22,
+    "loop_ms": 8580,
+    "first_frame_ms": 5500,
+    "bytes": 78516
   }
-]
+}

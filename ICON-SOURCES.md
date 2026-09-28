@@ -47,3 +47,17 @@ The console, navigation shapes, project numbering, and decorative research motif
 were created for this profile. They do not display empirical data or live metrics.
 All final display assets are local; no font files, external image references,
 tracking counters, or external animation services are required by the README.
+
+## Navigation artwork added in this revision
+
+Google Scholar, LinkedIn, and GitHub navigation icons are the SVG artwork from the
+locally available Font Awesome Free 6.7.2 `brands` set (not hand-drawn substitutes).
+The geometry is scaled to the 14-pixel icon box; the fill is adapted to each theme.
+Original SVGs, attribution comments, and the license notice are retained in
+`design/navigation-icons/` and `LICENSE-FONT-AWESOME.txt`.
+
+- https://github.com/FortAwesome/Font-Awesome
+- https://fontawesome.com/license/free
+
+The JAX, NumPyro, MATLAB, and representative toolchain marks described above have
+not been replaced or reclassified in this layout revision.

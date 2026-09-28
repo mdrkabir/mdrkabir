@@ -1,3 +1,4 @@
-Pillow
-CairoSVG
-fonttools
+Pillow>=10
+CairoSVG>=2.7
+fonttools>=4
+markdown-it-py>=3

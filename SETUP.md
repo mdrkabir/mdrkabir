@@ -1,36 +1,46 @@
-# Publish the profile
+# Publish this complete profile
 
-This is a complete, self-contained repository—not a patch. No image downloads,
-browser repair pages, Python runs, or GitHub Actions are required to display it.
+The bundle is self-contained. All display images are already generated and stored locally.
+No account connection, logo downloader, network fetch, or build step is required.
 
-1. Save a copy of your current README if you have edited its wording.
-2. Open your existing `mdrkabir/mdrkabir` local repository. Keep its `.git` directory.
-3. Copy the contents of this ZIP's `mdrkabir` directory into that repository.
-   `README.md` must be at the top level, with `assets/` beside it.
-4. Commit the files to the default branch and push.
+1. Save a backup of any customized wording in your current README.
+2. Copy the **contents** of this `mdrkabir` folder into your existing local profile repository.
+   Keep your repository's `.git` folder and unrelated files.
+3. At minimum, update the root `README.md` and add **all** of `assets/profile-v4/`.
+4. Commit the files and push to your repository's default branch.
 
-Required for display:
+Do not put the contents inside an additional `mdrkabir` directory. The structure must be:
 
 ```
 README.md
-assets/profile-v2/   (the entire supplied directory)
+assets/
+  profile-v4/
+    console-light.gif
+    console-dark.gif
+    focus-light.svg
+    focus-dark.svg
+    ...
 ```
 
-Do not upload the outer ZIP or nest another `mdrkabir/` directory inside your repo.
-The `profile-v2` folder isolates these assets from earlier versions, so you do not
-need to delete your older logo files. There are no remote image dependencies.
+Old profile-v2 assets may remain; the new README does not refer to them. You do not need
+any earlier ZIP. This folder deliberately uses a new asset path to avoid mixing generations.
 
-## Important for installations using an earlier supplied workflow
+## Existing automatic workflow
 
-Copy the included `.github/workflows/profile-assets.yml` as well. It REPLACES the
-old download-and-rewrite workflow with a read-only validator. The new workflow
-never downloads logos, edits the README, or commits changes. Also copy `tools/`
-when using it. Alternatively, disable/remove that specific old workflow yourself.
-Do not remove unrelated workflows.
+If a previous kit installed `.github/workflows/profile-assets.yml`, replace it with the
+file included here. It validates the files and cannot modify or regenerate your README.
+The read-only workflow is optional; the profile displays without GitHub Actions.
 
-The remaining files are optional source/documentation. `README-static.md` gives
-the same layout with a still header: copy its contents to `README.md` to use it.
+## Optional offline validation
 
-GitHub documentation:
-https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github
+Run from the repository root:
+
+```
+python3 tools/validate_profile.py
+```
+
+## View before publishing
+
+Open `PREVIEW.html` in a browser. It embeds the supplied images and includes light/dark
+controls. It is a local approximation of GitHub's README styling, not a live GitHub page.
+The animation has a long readable pause before each typing cycle.
