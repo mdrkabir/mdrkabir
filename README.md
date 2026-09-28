@@ -1,6 +1,6 @@
 ### Hi! 👋
 
-I'm a **Computer Science Ph.D. student at Indiana University Bloomington**, interested in how models learn, behave, and make decisions. My work spans *LLM post-training and interpretability**, *Reinforcement learning**, and *Probabilistic modeling *.
+I'm a **Computer Science Ph.D. student** at Indiana University Bloomington, interested in how models learn, behave, and make decisions. My work spans **LLM post-training and interpretability**, **Reinforcement learning**, and **Probabilistic modeling**.
 
 ### Research 🧠
 
