@@ -4,9 +4,9 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
 
 ### Research 🧠
 
-- **LLM post-training:** Supervised fine-tuning and reinforcement learning with verifiable rewards.
+- **LLM post-training:** Supervised fine-tuning and reinforcement learning.
 - **Evaluation & interpretability:** Model behavior, safety evaluation, and representation analysis.
-- **Reinforcement learning & memory:** Time-scale invariant memory and temporal decision-making.
+- **Reinforcement learning:** Time-scale invariant memory and temporal decision-making.
 - **Bayesian modeling & inference:** Hierarchical models for cognitive and behavioral data.
 
 ### Links 🔗
@@ -19,7 +19,7 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
 
 ### Tech Stack 🛠️
 
-#### LLM & deep learning
+#### LLM & ML/DL
 
 <p>
   <a href="https://pytorch.org/" title="PyTorch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/pytorch-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/pytorch-light.png"><img src="assets/stack/pytorch-light.png" alt="PyTorch" width="80" height="66"></picture></a>
