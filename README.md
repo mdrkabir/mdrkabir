@@ -1,19 +1,15 @@
-## Hi! 👋
+### Hi! 👋
 
 I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm interested in how models learn, remember, and make decisions, with a focus on **LLM post-training and interpretability**, **reinforcement learning**, and **Bayesian modeling**. I train and evaluate language models, build agents with temporal memory, and use probabilistic models to better understand cognitive and behavioral data.
 
----
-
-## Research 🧠
+### Research 🧠
 
 - **LLM post-training:** Supervised fine-tuning and reinforcement learning with verifiable rewards.
 - **Evaluation & interpretability:** Model behavior, safety evaluation, and representation analysis.
 - **Reinforcement learning & memory:** Time-scale invariant memory and temporal decision-making.
 - **Bayesian modeling & inference:** Hierarchical models for cognitive and behavioral data.
 
----
-
-## Links 🔗
+### Links 🔗
 
 <p>
   <a href="https://mdrkabir.github.io/homepage/"><img src="assets/links/website.svg" alt="Personal website" width="164" height="36"></a> &nbsp;
@@ -21,11 +17,9 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
   <a href="https://www.linkedin.com/in/mdrysulkabir/"><img src="assets/links/linkedin.svg" alt="LinkedIn" width="118" height="36"></a>
 </p>
 
----
+### Tech Stack 🛠️
 
-## Tech Stack 🛠️
-
-### LLM & deep learning
+#### LLM & deep learning
 
 <p>
   <a href="https://pytorch.org/" title="PyTorch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/pytorch-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/pytorch-light.png"><img src="assets/stack/pytorch-light.png" alt="PyTorch" width="80" height="66"></picture></a>
@@ -35,7 +29,7 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
   <a href="https://www.tensorflow.org/" title="TensorFlow"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/tensorflow-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/tensorflow-light.png"><img src="assets/stack/tensorflow-light.png" alt="TensorFlow" width="80" height="66"></picture></a>
 </p>
 
-### Bayesian modeling & data science
+#### Bayesian modeling & data science
 
 <p>
   <a href="https://num.pyro.ai/" title="NumPyro"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/numpyro-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/numpyro-light.png"><img src="assets/stack/numpyro-light.png" alt="NumPyro" width="80" height="66"></picture></a>
@@ -47,7 +41,7 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
   <a href="https://seaborn.pydata.org/" title="Seaborn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/seaborn-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/seaborn-light.png"><img src="assets/stack/seaborn-light.png" alt="Seaborn" width="80" height="66"></picture></a>
 </p>
 
-### Compute & development
+#### Compute & development
 
 <p>
   <a href="https://slurm.schedmd.com/" title="Slurm / HPC"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/slurm-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/slurm-light.png"><img src="assets/stack/slurm-light.png" alt="Slurm / HPC" width="80" height="66"></picture></a>
@@ -58,7 +52,7 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
   <a href="https://git-scm.com/" title="Git"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/git-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/git-light.png"><img src="assets/stack/git-light.png" alt="Git" width="80" height="66"></picture></a>
 </p>
 
-### Languages
+#### Languages
 
 <p>
   <a href="https://www.python.org/" title="Python"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/python-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/python-light.png"><img src="assets/stack/python-light.png" alt="Python" width="80" height="66"></picture></a>
@@ -69,7 +63,7 @@ I am a **Computer Science Ph.D. student at Indiana University Bloomington**. I'm
   <a href="https://www.mathworks.com/products/matlab.html" title="MATLAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/matlab-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/matlab-light.png"><img src="assets/stack/matlab-light.png" alt="MATLAB" width="80" height="66"></picture></a>
 </p>
 
-### Databases
+#### Databases
 
 <p>
   <a href="https://www.postgresql.org/" title="PostgreSQL"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/postgresql-dark.png"><source media="(prefers-color-scheme: light)" srcset="assets/stack/postgresql-light.png"><img src="assets/stack/postgresql-light.png" alt="PostgreSQL" width="80" height="66"></picture></a>
