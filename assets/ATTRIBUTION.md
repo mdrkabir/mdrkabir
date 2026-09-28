@@ -1,4 +1,4 @@
-# Stack logo attribution
+# Asset attribution
 
 The PNGs in `stack/` provide light and dark versions of the profile's 26 tool
 logos. Product names and marks belong to their respective owners.
@@ -28,3 +28,15 @@ These are not all unmodified official logos:
   [Pyro monogram](https://raw.githubusercontent.com/pyro-ppl/numpyro/master/docs/source/_static/img/pyro_logo.png).
 - Slurm/HPC and SQL use representative cluster and database symbols.
 - Bash/Zsh uses Bash-related artwork; Seaborn uses a simplified wave mark.
+
+## Link buttons
+
+The Google Scholar and LinkedIn marks in `links/` use Font Awesome Free 6.7.2
+brand icons, scaled and recolored white. The icons are licensed under CC BY 4.0;
+original attribution comments are retained in each SVG, with the bundled notice
+in [licenses/FONT-AWESOME.txt](licenses/FONT-AWESOME.txt).
+
+- [Font Awesome](https://fontawesome.com/)
+- [Font Awesome Free license](https://fontawesome.com/license/free)
+
+The website globe and button backgrounds were drawn for this profile.
