@@ -1,7 +1,8 @@
-# Archived asset provenance and limitations
+# Asset provenance and limitations
 
-These sources document artwork from the previous profile-v4 design. The current
-`README.md` does not display these icons.
+The current `README.md` reuses the 26 light/dark tool logo tiles from profile-v4
+in its tech stack section. Other artwork described below belongs to earlier
+layouts and is not displayed by the current profile.
 
 Product names and marks belong to their respective owners. No endorsement is
 implied. This file distinguishes source-derived art, reconstructed art, and
@@ -42,14 +43,14 @@ Slurm/HPC and SQL use general cluster/database symbols. The Bash/Zsh entry uses
 Bash-related artwork. Seaborn retains the earlier simplified wave mark. These are
 representations of the tools, not newly verified official brand artwork.
 
-## New profile design
+## Archived profile design
 
 The console, navigation shapes, project numbering, and decorative research motifs
 were created for this profile. They do not display empirical data or live metrics.
 All final display assets are local; no font files, external image references,
 tracking counters, or external animation services are required by the README.
 
-## Navigation artwork added in this revision
+## Archived navigation artwork
 
 Google Scholar, LinkedIn, and GitHub navigation icons are the SVG artwork from the
 locally available Font Awesome Free 6.7.2 `brands` set (not hand-drawn substitutes).

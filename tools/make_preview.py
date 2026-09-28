@@ -25,6 +25,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Bli
 .markdown-body h3{font-size:1.25em;font-weight:600;line-height:1.25;margin:24px 0 16px}
 .markdown-body h4{font-size:1em;font-weight:600;line-height:1.25;margin:24px 0 16px}
 .markdown-body p{margin:0 0 16px}.markdown-body img{max-width:100%;height:auto;vertical-align:baseline;box-sizing:content-box}
+.markdown-body ul{margin:0 0 16px;padding-left:2em}.markdown-body li+li{margin-top:.25em}
 .markdown-body a{color:var(--link);text-decoration:none}.markdown-body a:hover{text-decoration:underline}
 .markdown-body strong{font-weight:600}.markdown-body code{padding:.2em .4em;font-size:85%;white-space:break-spaces;background:var(--code);border-radius:6px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
 .markdown-body sub{font-size:12px;position:relative;vertical-align:baseline;bottom:-.25em}.markdown-body hr{height:1px;background:var(--line);border:0;margin:24px 0}
